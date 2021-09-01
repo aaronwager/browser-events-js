@@ -28,3 +28,16 @@ mainHeading.addEventListener("click", function () {
   const headingStyle = document.querySelector("h1");
   headingStyle.style.backgroundColor = "#333333";
 });
+
+// Testing Performance using performance.now()
+
+const startTime = performance.now();
+
+for (let i = 0; i <= 100; i++) {
+  for (let j = 0; j <= 100; j++) {
+    console.log("i and j are ", i, j);
+  }
+}
+
+const endTime = performance.now();
+console.log("This code took " + (endTime - startTime) + " milliseconds.");
