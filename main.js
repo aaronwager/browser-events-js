@@ -41,3 +41,16 @@ for (let i = 0; i <= 100; i++) {
 
 const endTime = performance.now();
 console.log("This code took " + (endTime - startTime) + " milliseconds.");
+
+/* Reflow and Repaint
+-the purpose of this code is to show that setting an element display to none is faster than removing the element from the page. This is because of reflow and repaint.
+
+*/
+
+// hide #comments
+document.getElementById("comments").style.display = "none";
+
+// Delete spam comments from
+
+// Show #comments
+document.getElementById("comments").style.display = "block";
